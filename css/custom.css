@@ -2297,6 +2297,7 @@ header.main-header .header-sticky.active {
   border: 1px solid #ccc;
   color: #000;
   background: var(--white-color);
+  appearance: auto !important;
 }
 
 .our-contact-us-form .contact-form .form-control::placeholder {
