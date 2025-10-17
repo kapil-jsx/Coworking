@@ -16,7 +16,7 @@
             openedSymbol: '&#9660;',
             prependTo: 'body',
             appendTo: '',
-            parentTag: 'a',
+            parentTag: 'div',
             closeOnClick: false,
             allowParentLinks: false,
             nestedParentLinks: true,
@@ -111,9 +111,10 @@
             iconClass += ' ' + prefix + '_no-text';
         }
 
-        if (settings.parentTag === 'a') {
-            settings.parentTag = 'a href="#"';
+        if (settings.parentTag === 'div') {
+            settings.parentTag = 'div';
         }
+        // alert(settings.parentTag);
 
         // create menu bar
         $this.mobileNav.attr('class', prefix + '_nav');
